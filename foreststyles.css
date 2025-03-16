@@ -95,15 +95,41 @@ h1 {
   transform: translateY(0); /* Reset lift on click */
 }
 
-/* Wrong Answer Message */
-#wrong-answer {
-  margin-top: 10px;
-  display: none; /* Hidden by default */
+/* Try Again Screen */
+#try-again {
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* Axe Image */
-#axe-image {
-  width: 100px; /* Adjust size as needed */
+#try-again p {
+  font-size: 1.2rem;
+  color: #ff3b2f; /* Red color for error message */
+  font-weight: bold;
+}
+
+#try-again button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff6f61; /* Coral color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#try-again button:hover {
+  background: #ff3b2f; /* Darker coral on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#try-again button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+/* Map Image */
+#map-image {
+  width: 150px; /* Adjust size as needed */
   height: auto;
   margin: 20px auto; /* Center the image */
   display: block; /* Ensure it's centered */
