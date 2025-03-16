@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Snowy Plains</title>
+  <link rel="stylesheet" href="snowystyles.css">
+</head>
+<body class="snowy-plains">
+  <!-- Content Container -->
+  <div id="container">
+    <h1>The Snowy Plains</h1>
+
+    <!-- Description -->
+    <div id="description">
+      <p>You’ve entered a vast, snowy plain.To proceed, you need to find the <strong>compass</strong> to spot the treasure area. A snowman approaches, and asks you a riddle for the compass. Solve the riddle to acquire it!</p>
+      <button class="continue-button" onclick="showRiddle()">Continue</button>
+    </div>
+
+    <!-- Riddle -->
+    <div id="riddle" style="display: none;">
+      <p><em>"I’m not alive, but I can grow. I don’t have lungs, but I need air. What am I?"</em></p>
+      <button onclick="checkAnswer('fire')">Fire</button>
+      <button onclick="checkAnswer('tree')">A Tree</button>
+      <button onclick="checkAnswer('shadow')">A Shadow</button>
+      <button onclick="checkAnswer('cloud')">A Cloud</button>
+    </div>
+
+    <!-- Try Again Screen -->
+    <div id="try-again" style="display: none;">
+      <p>Oops, that’s not it! Try again.</p>
+      <button onclick="retryRiddle()">Try Again</button>
+    </div>
+
+    <!-- Item Reveal -->
+    <div id="item" style="display: none;">
+      <p>yayyy you got the <strong>compass</strong>!! Say thank u to mr snowman :) </p>
+      <img src="https://wiki.hypixel.net/images/d/dc/Minecraft_items_compass.png" alt="compass" id="compass-image">
+      <a href="location3.html" class="button">Next Location</a>
+    </div>
+  </div>
