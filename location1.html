@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Enchanted Forest</title>
-  <link rel="stylesheet" href="foreststyles.css">
+  <link rel="stylesheet" href="foreststyles.css"> <!-- Updated CSS file name -->
 </head>
 <body>
   <!-- Content Container -->
@@ -13,7 +13,7 @@
 
     <!-- Description -->
     <div id="description">
-      <p>You’ve entered a magical forest. The trees whisper secrets, and the air is filled with mystery. To proceed, you need to find the <strong>Map</strong>. Solve the riddle to unlock it!</p>
+      <p>You’ve entered a magical forest. The trees whisper secrets (wowwwww) , and the air is filled with mystery (oooooo) To proceed you need to find the <strong>Map</strong>!! Solve the riddle to unlock it<3</p>
       <button class="continue-button" onclick="showRiddle()">Continue</button>
     </div>
 
@@ -24,17 +24,22 @@
       <button onclick="checkAnswer('whistle')">A Whistle</button>
       <button onclick="checkAnswer('shadow')">A Shadow</button>
       <button onclick="checkAnswer('cloud')">A Cloud</button>
-      <p id="wrong-answer" style="display: none; color: #ff3b2f; font-weight: bold;">Oops, that’s not it! Try again.</p>
+    </div>
+
+    <!-- Try Again Screen -->
+    <div id="try-again" style="display: none;">
+      <p>oh no, try again!</p>
+      <button onclick="retryRiddle()">Try Again</button>
     </div>
 
     <!-- Item Reveal -->
     <div id="item" style="display: none;">
-      <p>🎉 You found the <strong>Map</strong>!</p>
+      <p>YAYYYY YOU FOUND THE <strong>MAP</strong>!</p>
       <img src="https://minecraft.wiki/images/Woodland_Explorer_Map_BE2.png?a841b" alt="Woodland Explorer Map" id="map-image">
       <a href="location2.html" class="button">Next Location</a>
     </div>
   </div>
 
-  <script src="forestscript.js"></script>
+  <script src="forestscript.js"></script> <!-- Updated JavaScript file name -->
 </body>
 </html>
