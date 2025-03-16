@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Enchanted Forest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Content Container -->
+  <div id="container">
+    <h1>The Enchanted Forest</h1>
+
+    <!-- Description -->
+    <div id="description">
+      <p>You’ve entered a magical forest. The trees whisper secrets, and the air is filled with mystery. To proceed, you need to find the <strong>Map</strong>. Solve the riddle to unlock it!</p>
+      <button class="continue-button" onclick="showRiddle()">Continue</button>
+    </div>
+
+    <!-- Riddle -->
+    <div id="riddle" style="display: none;">
+      <p><em>"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?"</em></p>
+      <button onclick="checkAnswer('echo')">An Echo</button>
+      <button onclick="checkAnswer('whistle')">A Whistle</button>
+      <button onclick="checkAnswer('shadow')">A Shadow</button>
+      <button onclick="checkAnswer('cloud')">A Cloud</button>
+      <p id="wrong-answer" style="display: none; color: #ff3b2f; font-weight: bold;">Oops, that’s not it! Try again.</p>
+    </div>
+
+    <!-- Item Reveal -->
+    <div id="item" style="display: none;">
+      <p>🎉 You found the <strong>Map</strong>!</p>
+      <img src="https://minecraft.wiki/images/Woodland_Explorer_Map_BE2.png?a841b" alt="Woodland Explorer Map" id="map-image">
+      <a href="location2.html" class="button">Next Location</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
