@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://t4.ftcdn.net/jpg/08/97/00/79/360_F_897007993_TKJ8AQQcA3wHyZz89gYvP5tLDuFfJKWc.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* White text */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Overlay to make text readable */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for better contrast */
+  z-index: 1;
+}
+
+/* Container for Content */
+#container {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Heading */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+/* Continue Button */
+.continue-button {
+  display: inline-block;
+  padding: 8px 12px; /* Smaller padding */
+  font-size: 0.9rem; /* Smaller font size */
+  color: #fff;
+  background: #ff6f61; /* Coral color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.continue-button:hover {
+  background: #ff3b2f; /* Darker coral on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.continue-button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+/* Riddle and Buttons */
+#riddle {
+  margin: 20px 0;
+  display: flex; /* Arrange buttons in a row */
+  justify-content: space-between; /* Space buttons evenly */
+  gap: 10px; /* Add space between buttons */
+}
+
+#riddle button {
+  flex: 1; /* Make buttons take equal width */
+  padding: 8px 12px; /* Smaller padding */
+  font-size: 0.9rem; /* Smaller font size */
+  color: #fff;
+  background: #ff6f61; /* Coral color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#riddle button:hover {
+  background: #ff3b2f; /* Darker coral on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#riddle button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+/* Try Again Screen */
+#try-again {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#try-again p {
+  font-size: 1.2rem;
+  color: #ff3b2f; /* Red color for error message */
+  font-weight: bold;
+}
+
+#try-again button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff6f61; /* Coral color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#try-again button:hover {
+  background: #ff3b2f; /* Darker coral on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#try-again button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
+/* Map Image */
+#compass-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin: 20px auto; /* Center the image */
+  display: block; /* Ensure it's centered */
+  border-radius: 10px; /* Soft rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Item Reveal */
+#item {
+  margin: 20px 0;
+}
+
+/* Button */
+.button {
+  display: block; /* Make the button a block-level element */
+  width: 150px; /* Set a specific width (adjust as needed) */
+  max-width: 100%; /* Ensure it doesn't overflow its container */
+  padding: 10px 20px; /* Adjust padding to make it more compact */
+  font-size: 1rem; /* Adjust font size if needed */
+  color: #fff;
+  background: #ff6f61; /* Coral color */
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 20px auto; /* Center the button horizontally */
+  box-shadow: 0 4px 10px rgba(255, 111, 97, 0.4); /* Button shadow */
+}
+
+.button:hover {
+  background: #ff3b2f; /* Darker coral on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.button:active {
+  transform: translateY(0); /* Reset lift on click */
+}
