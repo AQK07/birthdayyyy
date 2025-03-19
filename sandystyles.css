@@ -1,9 +1,9 @@
-/* General Styles */
+]/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   background: url('https://t4.ftcdn.net/jpg/07/56/23/25/360_F_756232596_74UWvjrjxVMOb5a0kQVm9VDSyunYikrG.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -77,7 +77,7 @@ h1 {
   align-items: center;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #000;
+  color: black; /* Changed font color to black */
   font-size: 1rem;
   cursor: pointer;
   user-select: none;
