@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Beach - Word Search</title>
+  <link rel="stylesheet" href="wordsearch.css">
+</head>
+<body>
+  <!-- Startup Screen -->
+  <div id="startup-screen">
+    <h1> WE'VE MADE IT TO THE GOLDEN BEACH</h1> 
+    <p>To obtain the next item, you must defeat a krabby crab's word search!!</p>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <!-- Word Search Container -->
+  <div id="word-search-container" style="display: none;">
+    <h1>Golden Beach - Word Search</h1>
+
+    <!-- Description -->
+    <div id="description">
+      <p>To obtain the next item, you must defeat a krabby crab's word search!!</p>
+    </div>
+
+    <!-- Word Search Grid and Word List -->
+    <div class="word-search">
+      <!-- Grid -->
+      <div class="grid" id="grid"></div>
+
+      <!-- Word List -->
+      <div class="word-list">
+        <h3>Words to Find:</h3>
+        <ul id="word-list">
+          <li>TREASURE</li>
+          <li>BEACH</li>
+          <li>SAND</li>
+          <li>SUN</li>
+          <li>WAVES</li>
+          <li>SHELL</li>
+          <li>OCEAN</li>
+          <li>PALM</li>
+          <li>SUNSET</li>
+          <li>TROPICAL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Completion Screen -->
+  <div id="completion-screen" style="display: none;">
+    <h1>Congratulations!</h1>
+    <p>YAYYYYY you defeated the krabby crab's word search and got the<strong>Golden Key</strong>!!</p>
+    <img src="https://via.placeholder.com/150" alt="Golden Key" id="golden-key-image">
+    <a href="#" class="button">Next location</a>
+  </div>
+
+  <script src="wordsearch.js"></script>
+</body>
+</html>
