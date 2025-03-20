@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The Awesome Treasure!</title>
+
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Comic Sans font */
+      background-color: pink; /* Pink background for the whole page */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #container {
+      text-align: center;
+      background-color: pink; /* Pink background for the window */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 70%;
+      max-width: 500px;
+    }
+
+    #message-window {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .continue-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #chest-section {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <h1>YAYYYYY YOU DID IT!</h1>
+
+    <!-- Initial Message Window -->
+    <div id="message-window">
+      <p> AWESOME!! YOU FOUND THE TREASURE!! with the map and compass that led you here, and the key that will open the chest, please click below to reveal the treasure</p>
+      <button class="continue-button" onclick="showChest()">Continue</button>
+    </div>
+
+    <!-- Chest Section -->
+    <div id="chest-section">
+      <h2>Open the Chest!</h2>
+      <!-- Updated Image URL -->
+      <img src="https://www.pngmart.com/files/23/Chests-PNG-File.png" alt="Minecraft Chest" />
+      <a href="next-page.html">
+        <button class="continue-button">Open The Chest!!</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function showChest() {
+      // Hide the initial message window and show the chest section
+      document.getElementById('message-window').style.display = 'none';
+      document.getElementById('chest-section').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
